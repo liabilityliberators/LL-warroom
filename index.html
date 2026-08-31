@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Liability Liberators · War Room Portal</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com"></script>
+<style>
+html,body{height:100%;font-family:'Inter',system-ui,-apple-system,sans-serif;background:#050510;color:#e5e7eb;overflow:hidden}
+.glass{background:rgba(255,255,255,0.03);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);border:1px solid rgba(255,255,255,0.05)}
+.glass-glow{background:rgba(255,255,255,0.03);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);border:1px solid rgba(255,255,255,0.05);box-shadow:0 0 40px rgba(139,92,246,0.08)}
+.gradient-text{background:linear-gradient(135deg,#A78BFA 0%,#EC4899 100%);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+.gradient-gold{background:linear-gradient(135deg,#FBBF24 0%,#F59E0B 100%);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+.orb{position:fixed;border-radius:50%;filter:blur(80px);opacity:0.25;pointer-events:none;z-index:0}
+.orb-1{width:400px;height:400px;background:#8B5CF6;top:-100px;left:-100px}
+.orb-2{width:300px;height:300px;background:#EC4899;bottom:-50px;right:-50px}
+.orb-3{width:250px;height:250px;background:#22D3EE;top:40%;left:60%}
+.pulse-live{animation:pulseLive 2s infinite}
+@keyframes pulseLive{0%,100%{opacity:1}50%{opacity:0.5}}
+.card-lift{transition:transform 0.3s ease,box-shadow 0.3s ease}
+.card-lift:hover{transform:translateY(-4px);box-shadow:0 20px 40px rgba(0,0,0,0.3)}
+</style>
+</head>
+<body class="flex items-center justify-center">
+<div class="orb orb-1"></div><div class="orb orb-2"></div><div class="orb orb-3"></div>
+
+<div class="relative z-10 w-full max-w-lg px-6">
+  <div class="text-center mb-10">
+    <svg class="w-16 h-16 text-purple-400 mx-auto mb-4" viewBox="0 0 24 24" fill="currentColor"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5L12 1zm0 2.18l7 3.12v4.7c0 4.83-3.48 9.25-7 10.54-3.52-1.29-7-5.71-7-10.54V6.3l7-3.12z"/></svg>
+    <h1 class="text-4xl font-black text-white tracking-tight">LIABILITY <span class="text-purple-400">LIBERATORS</span></h1>
+    <p class="text-gray-400 text-sm mt-2">Secure War Room Portal</p>
+  </div>
+
+  <div class="space-y-4">
+    <!-- CLIENT PORTAL -->
+    <a href="./ll_warroom_client.html" class="block glass-glow rounded-2xl p-6 border border-purple-500/20 card-lift group">
+      <div class="flex items-center gap-4">
+        <div class="w-12 h-12 rounded-xl bg-purple-500/15 flex items-center justify-center">
+          <svg class="w-6 h-6 text-purple-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"/></svg>
+        </div>
+        <div class="flex-1">
+          <h2 class="text-white font-bold text-lg group-hover:text-purple-300 transition">Client War Room</h2>
+          <p class="text-gray-400 text-xs mt-0.5">For pre-IPO fintech founders. Crisis intake, threat feed, secure messenger, document vault.</p>
+        </div>
+        <svg class="w-5 h-5 text-gray-500 group-hover:text-purple-400 transition" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+      </div>
+    </a>
+
+    <!-- ADMIN PORTAL -->
+    <a href="./ll_warroom_admin.html" class="block glass rounded-2xl p-6 border border-white/5 card-lift group hover:border-pink-500/30">
+      <div class="flex items-center gap-4">
+        <div class="w-12 h-12 rounded-xl bg-pink-500/15 flex items-center justify-center">
+          <svg class="w-6 h-6 text-pink-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
+        </div>
+        <div class="flex-1">
+          <h2 class="text-white font-bold text-lg group-hover:text-pink-300 transition">Command Center</h2>
+          <p class="text-gray-400 text-xs mt-0.5">For LL staff only. Crisis queue, threat editor, banking health, invitation codes.</p>
+        </div>
+        <svg class="w-5 h-5 text-gray-500 group-hover:text-pink-400 transition" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+      </div>
+    </a>
+  </div>
+
+  <div class="mt-8 text-center">
+    <div class="inline-flex items-center gap-2 glass px-4 py-2 rounded-full border border-green-500/20">
+      <div class="w-2 h-2 rounded-full bg-green-400 pulse-live"></div>
+      <span class="text-green-400 text-xs font-bold">SYSTEM ONLINE</span>
+    </div>
+    <p class="text-gray-600 text-xs mt-3">Confidential · Authorized Personnel Only</p>
+  </div>
+</div>
+
+</body>
+</html>
